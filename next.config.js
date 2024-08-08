@@ -4,8 +4,7 @@ const isProd = process.env.NODE_ENV === 'production';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   basePath: isProd ? '/abdelrhman-elsawy' : '',
-    assetPrefix: isProd ? '/abdelrhman-elsawy' : '',
-    
+  assetPrefix: isProd ? '/abdelrhman-elsawy' : '',
   images: {
     remotePatterns: [
       {
@@ -29,3 +28,4 @@ const nextConfig = {
     },
 };
 
+export default nextConfig;
